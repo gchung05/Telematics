@@ -171,7 +171,7 @@
       # Plot t-SNE
         # Save a higher resolution version of each trip to use in the plot overlay
           for(i in 1:200) {
-            ggsave(plotTrip(i, vehicle, 1), width=3, height=6, units="in", dpi=100, bg = "transparent",
+            ggsave(plotTrip(i, vehicle, 3), width=3, height=6, units="in", dpi=100, bg = "transparent",
                    file=paste0(getwd(), "/../Documents/Telematics Data/", vehicleNum, "/trip", i, ".png"))
           }
         # Plot
